@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>404: page not found</title>
+   <link link rel="stylesheet" href="static/style.css"/>
+</head>
+<body>
+    <div class="content">
+        <a href="https://prometiprostor.hr/" ><img src="http://i67.tinypic.com/6q85lu.png" border="0" alt="Image and video hosting by TinyPic"></a>
+    
+        
+         <p id="naslov">Održavanje sustava</p>
+
+         {% if 'retried' in request.args %}
+            <p>Nažalost stranica još nije u funkciji, molimo pokušajte ponovo</p>
+         {% else %}
+            <p>Molimo pričekajte te nakon nekog vremena otiđite na link</p>
+         {% endif %}
+
+         <a href="http://www.google.com"><button>Go!</button></a>
+    </div>
+</body>
+</html>
